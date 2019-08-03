@@ -3,7 +3,7 @@
     "baseUrl": "src",
     "paths": {
       "components": ["app/components"],
-      "screens": ["app/screens/"],
+      "screens": ["app/screens"],
       "assets": ["assets"],
       "config": ["config"],
       "forms": ["core/forms"],
