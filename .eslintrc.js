@@ -34,6 +34,7 @@ module.exports = {
     'jsx-quotes': 'off',
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
+    'import/no-cycle': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
   },
