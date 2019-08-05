@@ -5,17 +5,16 @@ import { AuthState } from 'AuthTypes';
 const { login, logout } = AuthActions;
 
 const initialState = {
-  user: null,
+  token: '',
   error: '',
   loading: false,
-  headers: {},
 };
 
 const reducer = createReducer(initialState as AuthState)
   .handleAction(login.request, state => ({ ...state, loading: true, error: '' }))
   .handleAction(login.success, (state, { payload }) => {
-    const { user, headers } = payload;
-    return { ...state, ...initialState, user, headers };
+    const { token } = payload;
+    return { ...state, ...initialState, token };
   })
   .handleAction(login.failure, (state, { payload }) => ({
     ...state,

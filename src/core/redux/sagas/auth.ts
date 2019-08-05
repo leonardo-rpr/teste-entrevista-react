@@ -3,14 +3,14 @@ import idx from 'idx';
 import { AuthActions } from 'actions';
 import { toast } from 'react-toastify';
 import { push } from 'connected-react-router';
-import { put, all, delay } from 'redux-saga/effects';
+import { put, all, delay, call } from 'redux-saga/effects';
 
 const { login } = AuthActions;
 
 export function* authenticate({ payload }: any): Generator {
-  const authResponse = yield api.login.create(payload);
+  const authResponse = yield call(api.login.create, payload);
 
-  !idx(authResponse, _ => _.user.id)
+  !idx(authResponse, _ => _.token)
     ? yield all([
         put(login.failure(authResponse.message)),
         toast(authResponse.message, { type: 'error' }),
