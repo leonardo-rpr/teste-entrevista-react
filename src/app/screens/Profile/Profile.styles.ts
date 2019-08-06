@@ -17,3 +17,8 @@ export const PositionAvatar = styled.div`
   justify-content: center;
   margin-bottom: 10px;
 `;
+
+export const ContainerBadge = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
