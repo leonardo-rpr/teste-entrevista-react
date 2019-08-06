@@ -1,10 +1,8 @@
-import create from './create'
-import { Login } from 'apiTypes'
+import { Login } from 'apiTypes';
+import create from './create';
 
-const login = (getPublicResource: Function) => {
-  return {
-    create: (credentials: Login) => create(getPublicResource, credentials)
-  }
-}
+const login = (getPublicResource: Function) => ({
+    create: (credentials: Login) => create(getPublicResource, credentials),
+  });
 
-export default login
+export default login;

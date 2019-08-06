@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { GetPublicResourceInterface } from './Interfaces';
+import throwError from './throwError';
 
 const getPublicResource = async (props: GetPublicResourceInterface) => {
   const { endpoint, method, data, params, headers } = props;
@@ -8,9 +9,7 @@ const getPublicResource = async (props: GetPublicResourceInterface) => {
   const url = `${API_URL}${endpoint}`;
 
   try {
-    return axios.request({ url, method, data, params, headers }).catch((error) => {
-      console.table(error);
-    });
+    return axios.request({ url, method, data, params, headers }).catch(error => throwError(error));
   } catch (error) {
     return console.error(`Application error: ${error}`);
   }

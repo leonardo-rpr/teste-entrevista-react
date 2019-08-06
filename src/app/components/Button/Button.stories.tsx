@@ -7,6 +7,8 @@ storiesOf('Components', module)
   .addDecorator(withKnobs)
   .add('Button', () => (
     <div style={{ padding: '20px' }}>
-      <Button onClick={() => {}}>{text('Text', 'login')}</Button>
+      <Button loading={false} onClick={() => {}}>
+        {text('Text', 'login')}
+      </Button>
     </div>
   ));

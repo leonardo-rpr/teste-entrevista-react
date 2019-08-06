@@ -10,7 +10,9 @@ const { login } = AuthActions;
 export function* authenticate({ payload }: any): Generator {
   const authResponse = yield call(api.login.create, payload);
 
-  !idx(authResponse, _ => _.token)
+  console.log('saga', authResponse);
+
+  !idx(authResponse, _ => _.data.token)
     ? yield all([
         put(login.failure(authResponse.message)),
         toast(authResponse.message, { type: 'error' }),
