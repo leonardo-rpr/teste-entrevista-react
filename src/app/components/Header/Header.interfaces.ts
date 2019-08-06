@@ -1,4 +1,3 @@
 export interface HeaderInterface {
-  avatar: string;
-  name: string;
+  onClick: Function;
 }

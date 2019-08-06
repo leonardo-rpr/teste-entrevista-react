@@ -1,3 +1,5 @@
-import App from './app';
+import App from './App';
+import SignIn from './SignIn';
+import Profile from './Profile';
 
-export { App };
+export { App, SignIn, Profile };
