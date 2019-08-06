@@ -1,7 +1,7 @@
 declare module 'AuthTypes' {
-  export type AuthState = {
+  export interface AuthState {
     token: string;
     loading: boolean;
     error?: string;
-  };
+  }
 }

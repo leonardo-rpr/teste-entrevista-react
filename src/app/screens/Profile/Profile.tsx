@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { useSelector } from 'react-redux';
+import dispatchAction, { PersonActions } from 'actions';
 
 import { Header, Paper, TextField, Avatar, Title, Badge } from 'components';
 import { Container, UserInformations, PositionAvatar, ContainerBadge } from './Profile.styles';
 
 const Profile: React.FC<{}> = () => {
-  console.log('test');
+  const image = useSelector((state: any) => state.person.user.avatar);
+  const name = useSelector((state: any) => state.person.user.name);
+  const email = useSelector((state: any) => state.person.user.email);
+  const courses = useSelector((state: any) => state.person.user.courses);
+
+  useEffect(() => {
+    dispatchAction(PersonActions.person.request);
+  }, []);
+
+  const renderCourses = () => {
+    const mappedCourses = courses.map((course: any) => <Badge label={course} />);
+
+    return mappedCourses;
+  };
 
   return (
     <Container>
@@ -12,16 +28,14 @@ const Profile: React.FC<{}> = () => {
       <UserInformations>
         <Paper width="65%">
           <PositionAvatar>
-            <Avatar user={{ name: 'Leonardo Pinheiro', image: '' }} size="100px" />
+            <Avatar user={{ name, image }} size="100px" />
           </PositionAvatar>
 
-          <TextField disabled value="" label="Nome" placeholder="Nome" />
-          <TextField disabled value="" label="E-mail" placeholder="E-mail" />
+          <TextField disabled value={name} label="Nome" placeholder="Nome" />
+          <TextField disabled value={email} label="E-mail" placeholder="E-mail" />
 
           <Title title="Seus cursos assinados" />
-          <ContainerBadge>
-            <Badge label="ProEnem Medicina" />
-          </ContainerBadge>
+          <ContainerBadge>{renderCourses()}</ContainerBadge>
         </Paper>
       </UserInformations>
     </Container>
