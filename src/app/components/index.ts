@@ -1,8 +1,9 @@
 import Avatar from './Avatar';
 import Button from './Button';
 import Header from './Header';
-import Paper from './Paper';
-import TextField from './TextField';
 import If from './If';
+import Paper from './Paper';
+import PrivateRoute from './PrivateRoute';
+import TextField from './TextField';
 
-export { Avatar, Button, Header, Paper, TextField, If };
+export { Avatar, Button, Header, If, Paper, PrivateRoute, TextField };
