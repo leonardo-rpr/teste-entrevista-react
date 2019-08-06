@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, Paper, TextField, Avatar } from 'components';
+import { Header, Paper, TextField, Avatar, Title } from 'components';
 import { Container, UserInformations, PositionAvatar } from './Profile.styles';
 
 const Profile: React.FC<{}> = () => {
@@ -16,6 +16,7 @@ const Profile: React.FC<{}> = () => {
           </PositionAvatar>
           <TextField disabled value="" label="Nome" placeholder="Nome" />
           <TextField disabled value="" label="E-mail" placeholder="E-mail" />
+          <Title title="Seus cursos assinados" />
         </Paper>
       </UserInformations>
     </Container>
