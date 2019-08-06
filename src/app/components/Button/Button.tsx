@@ -1,6 +1,10 @@
 import React from 'react';
 import { StyledButton } from './Button.styles';
 
-const Button: React.FC<{}> = ({ children }) => <StyledButton>{children}</StyledButton>;
+import { ButtonInterface } from './Button.interfaces';
+
+const Button: React.FC<ButtonInterface> = ({ children, onClick }) => (
+  <StyledButton onClick={onClick}>{children}</StyledButton>
+);
 
 export default Button;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { ButtonStylesInterface } from './Button.interfaces';
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<ButtonStylesInterface>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,5 +17,5 @@ export const StyledButton = styled.button`
   cursor: pointer;
   width: 350px;
   color: #ffffff;
-  background-image: linear-gradient(to right, #f25c00 0%, #f58843 100%);
+  background: linear-gradient(to right, #f2295b 0%, #5a2b78 100%);
 `;

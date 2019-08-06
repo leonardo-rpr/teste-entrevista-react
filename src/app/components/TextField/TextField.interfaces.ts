@@ -3,10 +3,10 @@ export interface TextFieldInterface {
   value: string;
   placeholder: string;
   onChange: (event: any) => void;
-  error?: string | null;
-  theme?: any;
+  error?: string | null | boolean;
+  touched?: boolean;
 }
 
 export interface TextFieldStylesInterface {
-  theme?: any;
+  error?: string | null | boolean;
 }
