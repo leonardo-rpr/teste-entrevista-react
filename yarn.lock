@@ -11019,11 +11019,6 @@ react-select@^2.2.0:
     react-input-autosize "^2.2.1"
     react-transition-group "^2.2.1"
 
-react-spinner-material@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-spinner-material/-/react-spinner-material-1.1.2.tgz#929b34b49eca0228f5933c6d566809beb3bb4a39"
-  integrity sha512-tDGktLvu/SSYhlol6XaFkNB3ycOaDx6PHJjjg9d7aTlZAhmHfSIjTL1xO4QFwAMRYjdtkaqKqRjSecEhvoI9XQ==
-
 react-syntax-highlighter@^8.0.1:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-8.1.0.tgz#59103ff17a828a27ed7c8f035ae2558f09b6b78c"
