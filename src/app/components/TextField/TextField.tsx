@@ -10,6 +10,7 @@ const TextField: React.FC<TextFieldInterface> = ({
   onChange,
   error,
   touched,
+  disabled,
   ...props
 }) => (
   <Field>
@@ -19,6 +20,7 @@ const TextField: React.FC<TextFieldInterface> = ({
       onChange={onChange}
       placeholder={placeholder}
       error={!!(touched && error)}
+      disabled={disabled}
       {...props}
     />
     {!!(touched && error) && <Error>{error}</Error>}

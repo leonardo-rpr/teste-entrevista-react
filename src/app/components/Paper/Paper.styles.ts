@@ -5,7 +5,7 @@ export const Container = styled.div<PaperStylesInterface>`
   background: #fff;
   border-radius: 12px;
   display: inline-block;
-  width: 100%;
+  width: ${({ width }) => width || '100%'};
   transition: all 0.25s ease-in;
   font-weight: 300;
   font-size: 12px;
@@ -15,10 +15,6 @@ export const Container = styled.div<PaperStylesInterface>`
   :hover {
     box-shadow: 0px 14px 21px 2px rgba(60, 64, 67, 0.08), 0px 6px 7px -4px rgba(60, 64, 67, 0.16);
   }
-`;
-
-export const Wrapper = styled.div<PaperStylesInterface>`
-  margin: 15px;
 `;
 
 export const Title = styled.h2<PaperStylesInterface>`

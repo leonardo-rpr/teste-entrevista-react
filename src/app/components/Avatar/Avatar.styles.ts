@@ -7,11 +7,10 @@ export const Content = styled.div<AvatarStylesInterface>`
   justify-content: center;
   width: ${({ size }) => size};
   height: ${({ size }) => size};
-  border-radius: 24px;
-  border: 3px solid #ffa156;
-  background-color: #f25c00;
+  border-radius: 100%;
+  background-color: #f2295b;
   color: #fff;
-  font-size: 16px;
+  font-size: 40px;
 
   ${({ image }) => !!image
     && css`
