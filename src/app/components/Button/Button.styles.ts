@@ -15,7 +15,7 @@ export const StyledButton = styled.button<ButtonStylesInterface>`
   border: none;
   outline: none;
   cursor: pointer;
-  width: 350px;
+  width: 100%;
   color: #ffffff;
   background: linear-gradient(to right, #f2295b 0%, #5a2b78 100%);
 `;

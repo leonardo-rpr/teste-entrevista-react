@@ -23,7 +23,7 @@ const SignIn: React.FC<{}> = () => {
 
   return (
     <Container>
-      <Paper>{formikEnhancer({ config: formConfig, schema: SignInForm })}</Paper>
+      <Paper width="40%">{formikEnhancer({ config: formConfig, schema: SignInForm })}</Paper>
     </Container>
   );
 };
