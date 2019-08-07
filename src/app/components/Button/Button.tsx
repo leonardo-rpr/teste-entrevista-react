@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from 'react-md-spinner';
-import { If } from 'components';
+import { If } from '..';
 
 import { StyledButton } from './Button.styles';
 

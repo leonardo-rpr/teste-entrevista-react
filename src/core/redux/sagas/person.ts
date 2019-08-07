@@ -1,8 +1,8 @@
-import api from 'api';
 import idx from 'idx';
-import { PersonActions } from 'actions';
 import { toast } from 'react-toastify';
 import { put, all, call } from 'redux-saga/effects';
+import { PersonActions } from '../actions';
+import api from '../../api';
 
 const { person } = PersonActions;
 

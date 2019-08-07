@@ -1,5 +1,5 @@
-import { store } from 'store';
 import { getType } from 'typesafe-actions';
+import { store } from '../store';
 
 import * as AuthActions from './auth';
 import * as PersonActions from './person';

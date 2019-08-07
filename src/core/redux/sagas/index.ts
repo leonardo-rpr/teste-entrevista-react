@@ -1,6 +1,6 @@
 import { getType } from 'typesafe-actions';
 import { all, takeLatest } from 'redux-saga/effects';
-import { AuthActions, PersonActions } from 'actions';
+import { AuthActions, PersonActions } from '../actions';
 
 import { authenticate, disconnect } from './auth';
 import { getUserInfo } from './person';

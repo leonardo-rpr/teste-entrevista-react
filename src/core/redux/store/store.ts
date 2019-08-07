@@ -5,8 +5,8 @@ import { routerMiddleware } from 'connected-react-router';
 import { persistStore, persistReducer } from 'redux-persist';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import sagas from 'sagas';
-import history from 'config/history';
+import history from '../../../config/history';
+import sagas from '../sagas';
 import reducers from '../reducers';
 
 const sagaMiddleware = createSagaMiddleware();

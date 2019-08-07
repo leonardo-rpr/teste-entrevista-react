@@ -7,10 +7,12 @@ storiesOf('Components', module)
   .addDecorator(withKnobs)
   .add('Avatar', () => (
     <Avatar
-      size="50px"
+      size="100px"
       user={{
         name: text('name', 'Leonardo'),
-        image: boolean('with image', false) ? 'https://source.unsplash.com/random?self' : '',
+        image: boolean('with image', false)
+          ? 'https://cdn.dribbble.com/users/588874/screenshots/2291915/dribbble.png'
+          : '',
       }}
     />
   ));

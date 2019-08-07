@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledBadge = styled.div`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 15px;
   padding: 8px;
   font-size: 10px;

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { store } from 'store';
-import dispatchAction, { AuthActions } from 'actions';
+import dispatchAction, { AuthActions } from '../redux/actions';
+import { store } from '../redux/store';
 import { GetResourceInterface } from './Interfaces';
 import throwError from './throwError';
 

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 
 import { useSelector } from 'react-redux';
-import dispatchAction, { PersonActions, AuthActions } from 'actions';
+import dispatchAction, { PersonActions, AuthActions } from '../../../core/redux/actions';
 
-import { Header, Paper, TextField, Avatar, Title, Badge } from 'components';
+import { Header, Paper, TextField, Avatar, Title, Badge } from '../../components';
 import { Container, UserInformations, PositionAvatar, ContainerBadge } from './Profile.styles';
 
 const Profile: React.FC<{}> = () => {

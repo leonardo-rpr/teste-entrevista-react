@@ -1,12 +1,12 @@
 import React from 'react';
 
 import formikEnhancer from 'formik-enhancer';
-import { SignInForm } from 'forms';
 
 import { useSelector } from 'react-redux';
-import dispatchAction, { AuthActions } from 'actions';
+import dispatchAction, { AuthActions } from '../../../core/redux/actions';
 
-import { Paper, Button } from 'components';
+import { Paper, Button } from '../../components';
+import { SignInForm } from '../../../core/forms';
 import { Container } from './SignIn.styles';
 
 const SignIn: React.FC<{}> = () => {

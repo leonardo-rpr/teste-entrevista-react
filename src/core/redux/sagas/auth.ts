@@ -1,9 +1,9 @@
-import api from 'api';
 import idx from 'idx';
-import { AuthActions } from 'actions';
 import { toast } from 'react-toastify';
 import { push } from 'connected-react-router';
 import { put, all, delay, call } from 'redux-saga/effects';
+import { AuthActions } from '../actions';
+import api from '../../api';
 
 const { login } = AuthActions;
 

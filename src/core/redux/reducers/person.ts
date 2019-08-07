@@ -1,6 +1,6 @@
-import { PersonActions } from 'actions';
 import { createReducer } from 'typesafe-actions';
 import { PersonState } from 'PersonTypes';
+import { PersonActions } from '../actions';
 
 const { person } = PersonActions;
 

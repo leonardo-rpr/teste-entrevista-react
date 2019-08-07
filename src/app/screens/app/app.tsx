@@ -5,10 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import history from 'config/history';
-import { store, persistor } from 'store';
-import { SignIn, Profile } from 'screens';
-import { PrivateRoute } from 'components';
+import history from '../../../config/history';
+import { SignIn, Profile } from '..';
+import { PrivateRoute } from '../../components';
+import { store, persistor } from '../../../core/redux/store';
 
 import { GlobalStyles } from './App.styles';
 

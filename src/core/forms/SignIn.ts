@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { TextField } from 'components';
+import { TextField } from '../../app/components';
 
 const SignIn = [
   {

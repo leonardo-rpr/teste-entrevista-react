@@ -1,6 +1,6 @@
-import { AuthActions } from 'actions';
 import { createReducer } from 'typesafe-actions';
 import { AuthState } from 'AuthTypes';
+import { AuthActions } from '../actions';
 
 const { login, logout } = AuthActions;
 
