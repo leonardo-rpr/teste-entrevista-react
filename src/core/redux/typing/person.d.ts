@@ -9,6 +9,5 @@ declare module 'PersonTypes' {
   export interface PersonState {
     user: User;
     loading: boolean;
-    error?: string;
   }
 }

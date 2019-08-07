@@ -17,7 +17,9 @@ const Profile: React.FC<{}> = () => {
   }, []);
 
   const renderCourses = () => {
-    const mappedCourses = courses.map((course: any) => <Badge label={course} />);
+    const mappedCourses = courses.map((course: any) => (
+      <Badge key={course.id} label={course.name} />
+    ));
 
     return mappedCourses;
   };
@@ -34,7 +36,7 @@ const Profile: React.FC<{}> = () => {
           <TextField disabled value={name} label="Nome" placeholder="Nome" />
           <TextField disabled value={email} label="E-mail" placeholder="E-mail" />
 
-          <Title title="Seus cursos assinados" />
+          <Title title="Seus cursos" />
           <ContainerBadge>{renderCourses()}</ContainerBadge>
         </Paper>
       </UserInformations>

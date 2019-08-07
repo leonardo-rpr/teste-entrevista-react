@@ -7,12 +7,14 @@ import { put, all, call } from 'redux-saga/effects';
 const { person } = PersonActions;
 
 export function* getUserInfo(): Generator {
-  const authResponse = yield call(api.person.get);
+  const userResponse = yield call(api.person.get);
 
-  !idx(authResponse, _ => _.data)
+  !idx(userResponse, _ => _.name)
     ? yield all([
-        put(person.failure(authResponse.message)),
-        toast('Houve algum problema em buscar os dados desse usuário', { type: 'error' }),
+        put(person.failure(userResponse)),
+        toast('Houve algum problema ao buscar os dados desse usuário, tente novamente', {
+          type: 'error',
+        }),
       ])
-    : yield put(person.success(authResponse));
+    : yield put(person.success(userResponse));
 }

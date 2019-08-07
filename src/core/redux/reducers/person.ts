@@ -11,21 +11,19 @@ const initialState = {
     email: '',
     courses: [],
   },
-  error: '',
   loading: false,
 };
 
 const reducer = createReducer(initialState as PersonState)
-  .handleAction(person.request, state => ({ ...state, loading: true, error: '' }))
+  .handleAction(person.request, state => ({ ...state, loading: true }))
   .handleAction(person.success, (state, { payload }) => ({
     ...state,
     ...initialState,
     user: payload,
   }))
-  .handleAction(person.failure, (state, { payload }) => ({
+  .handleAction(person.failure, state => ({
     ...state,
     loading: false,
-    error: payload,
   }));
 
 export default reducer;
