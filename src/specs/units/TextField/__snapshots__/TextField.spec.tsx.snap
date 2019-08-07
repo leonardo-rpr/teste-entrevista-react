@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #f2295b;
+  color: #f2295b;
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::-moz-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1:-ms-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    
+    <input
+      class="c1"
+      placeholder="johndoe@proenem.com"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Should render correctly with label 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #f2295b;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #f2295b;
+  color: #f2295b;
+  outline: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1"
+    >
+      Lorem Ipsum
+    </label>
+    <input
+      class="c2"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Should render correctly with other type 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #f2295b;
+  color: #f2295b;
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::-moz-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1:-ms-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    
+    <input
+      class="c1"
+      type="email"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Should render correctly with value 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #f2295b;
+  color: #f2295b;
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::-moz-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1:-ms-input-placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+.c1::placeholder {
+  color: #f2295b;
+  opacity: 0.4;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    
+    <input
+      class="c1"
+      value="johndoe@proenem.com"
+    />
+  </div>
+</div>
+`;
