@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useSelector } from 'react-redux';
-import dispatchAction, { PersonActions } from 'actions';
+import dispatchAction, { PersonActions, AuthActions } from 'actions';
 
 import { Header, Paper, TextField, Avatar, Title, Badge } from 'components';
 import { Container, UserInformations, PositionAvatar, ContainerBadge } from './Profile.styles';
@@ -26,7 +26,7 @@ const Profile: React.FC<{}> = () => {
 
   return (
     <Container>
-      <Header onClick={() => {}} />
+      <Header onClick={() => dispatchAction(AuthActions.logout)} />
       <UserInformations>
         <Paper width="65%">
           <PositionAvatar>

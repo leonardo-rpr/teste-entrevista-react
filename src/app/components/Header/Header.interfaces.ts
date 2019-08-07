@@ -1,3 +1,3 @@
 export interface HeaderInterface {
-  onClick: Function;
+  onClick: any;
 }
